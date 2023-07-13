@@ -25,8 +25,8 @@ Esta nueva api para el navegador se encuentra en modo experimental y solo alguno
 }
 ```
 3. Simple customización desde el archivo css
-   ```
-  ::view-transition-old(root),
+```
+::view-transition-old(root),
 ::view-transition-new(root) {
   animation-duration: 5s;
 }
