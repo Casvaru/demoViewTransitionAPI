@@ -1,0 +1,34 @@
+---
+import Layout from "../layout/layout.astro";
+import Title from "../components/title.astro";
+import Atras from "../components/atras.astro";
+---
+
+<Layout>
+  <Atras/>
+    <Title titleName='Counter click'/>
+  <section
+  style="view-transition-name:box"
+  class="flex flex-col text-center border h-[280px] w-[600px] rounded-xl p-10 border-black">
+    <div class="gap-3 text-9xl font-bold select-none text-center">
+      <h3 style="view-transition-name: counter" id="number">0</h3>
+    </div>
+    <button id="count" class="py-1 px-5 border rounded border-black m-5 bg-gray-200 hover:bg-teal-500 hover:text-white active:translate-y-1 select-none">click me!!</button>
+  </section>
+</Layout>
+<style>
+  ::view-transition-old(root),
+	::view-transition-new(root) {
+  animation-duration: 2s !important;}
+</style>
+<script>
+  let counter = 0
+
+  count.addEventListener("click",()=>{
+    function updateTheDOMSomehow(){
+      counter = counter + 1
+      number.textContent = counter
+    }
+  document.startViewTransition(() => updateTheDOMSomehow());
+})
+</script>

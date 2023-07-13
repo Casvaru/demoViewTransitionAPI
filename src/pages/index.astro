@@ -1,0 +1,34 @@
+---
+import Layout from '../layout/layout.astro'
+import Title from '../components/title.astro';
+---
+
+<Layout>
+	<Title titleName ='Demo View transition API'/>
+	<div class="grid grid-cols-3 text-center gap-5 bg-red">
+		<a
+		href="demo1"
+		class="flex flex-col w-40 h-16 border rounded border-black cursor-pointer active:translate-y-2 hover:bg-teal-500 hover:text-white"
+		style="view-transition-name: box"
+		><h2 style="view-transition-name: title">Counter Click</h2><span style="view-transition-name: counter" class="font-bold">0</span></a>
+		<a
+		href="demo2"
+		style="view-transition-name:box2"
+		class="flex flex-col w-40 h-16 border rounded border-black cursor-pointer active:translate-y-2 hover:bg-teal-500 hover:text-white"
+		><h2 style="view-transition-name: switch">Card</h2></a>
+		<a
+		href="demo3"
+		style=""
+		class="flex relative overflow-hidden flex-col w-40 h-16 border rounded border-black cursor-pointer active:translate-y-2"
+		><h2>Image Scale</h2>
+		<img style="view-transition-name: picture" class="absolute -z-10" src="https://c4.wallpaperflare.com/wallpaper/283/881/127/the-great-wave-off-kanagawa-painting-japanese-waves-wallpaper-preview.jpg" alt="wave image">
+		</a>
+		
+  </div>
+</Layout>
+
+	<style>
+  a:hover{
+    box-shadow: 3px 3px 0px 1px rgb(26, 26, 26);
+  }
+</style>
