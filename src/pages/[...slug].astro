@@ -2,7 +2,7 @@
 import booksAPI from "../data/booksAPI.json"
 import Layout from "../layouts/Layout.astro"
 import style from '../styles/slug.module.css'
-import { fade, slide } from "astro:transitions"
+import { slide } from "astro:transitions"
 
 export async function getStaticPaths() {
   const pages = booksAPI

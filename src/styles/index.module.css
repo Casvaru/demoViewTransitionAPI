@@ -8,11 +8,13 @@
   font-size: 16px;
 }
 .containerImg{
-  width: 210px; height: 300px;
+  min-width: 210px; min-height: 300px;
   display: flex;
   justify-content: center;
   border-radius: 5px;
   object-fit: cover;
+  background: gray;
+  animation: loadingSkelet 2s infinite linear;
 }
 .imgFront{
   height: 100%; width: 100%;
@@ -63,4 +65,15 @@
 .linkPurchase:hover{
   background: rgba(0, 119, 255, 0.7);
 
+}
+@keyframes loadingSkelet{
+  0%{
+    background: gray;
+  }
+  50%{
+    background: rgb(95, 95, 95);
+  }
+  100%{
+    background: gray;
+  }
 }

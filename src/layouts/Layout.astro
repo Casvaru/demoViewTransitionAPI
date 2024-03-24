@@ -19,9 +19,20 @@ import ViewTransitions from 'astro/components/ViewTransitions.astro';
 		<title>{title}</title>
 		<ViewTransitions />
 		<script>
-			const msgSupport = document.getElementById('support')
-		
-			!document.startViewTransition ? msgSupport.style.display = "flex" : msgSupport.style.display = "none"
+			// Obtener el elemento con ID "support"
+			const msgSupport = document.getElementById('support');
+	
+			// Verificar si msgSupport no es nulo antes de acceder a su propiedad style
+			if (msgSupport !== null) {
+					// Verificar si la propiedad startViewTransition está definida en document
+					if (typeof document.startViewTransition === 'undefined') {
+							// Si no está definida, mostrar el mensaje de soporte
+							msgSupport.style.display = "flex";
+					} else {
+							// Si está definida, ocultar el mensaje de soporte
+							msgSupport.style.display = "none";
+					}
+			}
 		</script>
 	</head>
 	<body>
