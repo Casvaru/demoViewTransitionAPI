@@ -18,20 +18,10 @@ import ViewTransitions from 'astro/components/ViewTransitions.astro';
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<ViewTransitions />
-		<script>
-			const msgSupport = document.getElementById('support');
-	
-			if (msgSupport !== null) {
-					if (typeof document.startViewTransition === 'undefined') {
-							msgSupport.style.display = "flex";
-					} else {
-							msgSupport.style.display = "none";
-					}
-			}
-		</script>
+		<script src="../view.js"></script>
 	</head>
 	<body>
-		<div id="support" class="support"><span>Tu navegador no soporta la API View transition.</span></div>
+		<div id="support" class="support"><span>Tu navegador no soporta la API View transition.</span><a href="https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API" target="_blank">MDN</a><a target="_blank" href="https://caniuse.com/view-transitions">Support</a></div>
 		<slot />
 	</body>
 </html>
@@ -44,8 +34,8 @@ import ViewTransitions from 'astro/components/ViewTransitions.astro';
 		margin: 0; padding: 0;
 		box-sizing: border-box;
 		font-family: sans-serif;
-		text-decoration: none;
 		list-style: none;
+		color: white;
 	}
 	body{
 		max-width: 1280px;
@@ -68,5 +58,9 @@ import ViewTransitions from 'astro/components/ViewTransitions.astro';
 		width: 100%; height: 30px;
 		background: rgb(199, 48, 48);
 		display: none;
+		gap: 5px;
+	}
+	.support a:hover{
+		opacity: .7;
 	}
 </style>
