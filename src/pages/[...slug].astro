@@ -1,0 +1,34 @@
+---
+import booksAPI from "../data/booksAPI.json"
+import Layout from "../layouts/Layout.astro"
+import style from '../styles/slug.module.css'
+import { fade, slide } from "astro:transitions"
+
+export async function getStaticPaths() {
+  const pages = booksAPI
+  return pages.map(({ slug, title, synopsis, imageURL, author, publicationDate, language, purchaseURL, genre, numberOfPages, publisher }) => {
+    return {
+      params: { slug },
+      props: { title, synopsis, imageURL, slug, author,publicationDate, language, purchaseURL, genre, numberOfPages, publisher },
+    }
+  })
+}
+const { title, synopsis, imageURL, slug, author,publicationDate, language, purchaseURL, genre, numberOfPages, publisher } = Astro.props
+---
+<Layout title={title}>
+  <img transition:name={slug} src={imageURL} alt="" />
+  <div class={style.container} transition:animate={slide({duration:'.5s'})}>
+    <h1 class={style.titleBook}>{title}</h1>
+    <h4>{author}</h4>
+    <h4>{publicationDate}</h4>
+    <h4>Idiomas: {language}</h4>
+    <h4>Genero: {genre}</h4>
+    <h4>{numberOfPages} páginas</h4>
+    <h4>Editorial: {publisher}</h4>
+    <p class={style.synopsisBook}>{synopsis}</p>
+    <a class={style.linkPurchase} href={purchaseURL}>Obtener libro</a>
+    <a class={style.linkBack} href="../">Volver</a>
+    <div class={style.containerLinkAction}>
+    </div>
+  </div>
+</Layout>

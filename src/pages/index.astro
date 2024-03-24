@@ -1,0 +1,34 @@
+---
+import Layout from '../layouts/Layout.astro'
+import booksAPI from '../data/booksAPI.json'
+import style from '../styles/index.module.css'
+---
+
+<Layout title="Books viewTransition API." >
+	<section class={style.sectionMainBooks}>
+	{booksAPI.map(({title, imageURL, author, slug, purchaseURL, numberOfPages})=>{
+		return(
+			<div class={style.containerBook}>
+				<a href={slug} class={style.containerImg}>
+					<img
+					class={style.imgFront}
+					transition:name={slug}
+					src={imageURL}
+					alt=""
+					>
+				</a>
+				<div class={style.containerDescriptionBook}>
+					<h3 class={style.titleBook}>{title}</h3>
+					<h4 class={style.authorBook}>{author}</h4>
+					<h4 class={style.numberOfPagesBook}>{numberOfPages} páginas</h4>
+					<a
+					class={style.linkPurchase}
+						href={purchaseURL}
+						target="_blank"
+						rel="noopener noreferrer">Obtener libro</a>
+				</div>
+			</div>
+					)
+				})}
+	</section>
+</Layout>

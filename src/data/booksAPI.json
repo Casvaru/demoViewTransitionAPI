@@ -1,0 +1,80 @@
+[
+  {
+    "slug":"cien-años-de-soledad",
+    "title": "Cien años de soledad",
+    "imageURL": "https://www.agenciabalcells.com/fileadmin/user_upload/Cien_an__os_de_soledad_ilustrada_CB.jpg",
+    "publicationDate": "1967",
+    "numberOfPages": 417,
+    "author": "Gabriel García Márquez",
+    "synopsis": "La historia de la familia Buendía en el ficticio Macondo.",
+    "language": "Español",
+    "publisher": "Editorial Sudamericana",
+    "genre": "Realismo mágico",
+    "purchaseURL": "url_de_compra"
+  },
+  {
+    "slug":"don-quijote-de-la-Mancha",
+    "title": "Don Quijote de la Mancha",
+    "imageURL": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.0bNZINRqWrlx25jpeXcH1wAAAA%26pid%3DApi&f=1&ipt=a63980bb5be3085f1ba3df81efd31de3932380f8e05eeca54d333dc220217b27&ipo=images",
+    "publicationDate": "1605",
+    "numberOfPages": 863,
+    "author": "Miguel de Cervantes",
+    "synopsis": "Las aventuras de un hidalgo que enloquece después de leer demasiados libros de caballerías y decide convertirse en un caballero andante.",
+    "language": "Español",
+    "publisher": "Francisco de Robles",
+    "genre": "Novela",
+    "purchaseURL": "url_de_compra"
+  },
+  {
+    "slug":"la-sombra-del-viento",
+    "title": "La sombra del viento",
+    "imageURL": "https://www.planetadelibros.com.co/usuaris/libros/fotos/48/m_libros/47856_portada___201609051317.jpg",
+    "publicationDate": "2001",
+    "numberOfPages": 576,
+    "author": "Carlos Ruiz Zafón",
+    "synopsis": "Un niño llamado Daniel escoge un libro titulado 'La Sombra del Viento' de un lugar llamado el Cementerio de los Libros Olvidados y pronto se da cuenta de que alguien está destruyendo todas las copias de los libros de este autor.",
+    "language": "Español",
+    "publisher": "Planeta",
+    "genre": "Novela",
+    "purchaseURL": "url_de_compra"
+  },
+  {
+    "slug":"el-amor-en-los-tiempos-del-cólera",
+    "title": "El amor en los tiempos del cólera",
+    "imageURL": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.elsotano.com%2Fimagenes_grandes%2F9786070%2F978607072916.JPG&f=1&nofb=1&ipt=bd83a708c9a65245069984ba026b702e6b012c5d7c4b27c6e177df95748d9017&ipo=images",
+    "publicationDate": "1985",
+    "numberOfPages": 348,
+    "author": "Gabriel García Márquez",
+    "synopsis": "La historia de amor entre Florentino Ariza y Fermina Daza que se extiende por más de cincuenta años.",
+    "language": "Español",
+    "publisher": "Editorial Oveja Negra",
+    "genre": "Novela",
+    "purchaseURL": "url_de_compra"
+  },
+  {
+    "slug":"1984",
+    "title": "1984",
+    "imageURL": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdibujando.net%2Ffiles%2Ffs%2Fp%2Fi%2F2016%2F180%2F1984BAJA_276308.jpg&f=1&nofb=1&ipt=87f5bbf7c7b737df9af7d36e0102aa03c0c9108cd8abddf67b789db828436148&ipo=images",
+    "publicationDate": "1949",
+    "numberOfPages": 328,
+    "author": "George Orwell",
+    "synopsis": "Una novela distópica sobre un futuro totalitario donde el 'Gran Hermano' lo ve todo.",
+    "language": "Inglés",
+    "publisher": "Secker & Warburg",
+    "genre": "Ciencia ficción, Novela política",
+    "purchaseURL": "url_de_compra"
+  },
+  {
+    "slug":"matar-a-un-ruiseñor",
+    "title": "Matar a un ruiseñor",
+    "imageURL": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fblogs.upm.es%2Fnosolotecnica%2Fwp-content%2Fuploads%2Fsites%2F142%2F2010%2F09%2FCubierta_matar-a-un-ruise%25C3%25B1or2.jpg&f=1&nofb=1&ipt=8b8c682a73a0f723adc7b6b47885f8774f81732884c5cc996bec6ff2a4dc4361&ipo=images",
+    "publicationDate": "1960",
+    "numberOfPages": 281,
+    "author": "Harper Lee",
+    "synopsis": "La historia de Scout Finch, una niña en un pequeño pueblo, mientras su padre, un abogado, defiende a un hombre negro acusado injustamente de violación.",
+    "language": "Inglés",
+    "publisher": "J. B. Lippincott & Co.",
+    "genre": "Novela",
+    "purchaseURL": "url_de_compra"
+  }
+]

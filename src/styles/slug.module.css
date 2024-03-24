@@ -1,0 +1,39 @@
+.container{
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+  gap: 10px;
+}
+.linkPurchase{
+  display: flex;
+  background: rgb(0, 119, 255);
+  color: beige;
+  border-radius: 5px;
+  justify-content: center;
+  padding: 10px;
+}
+.linkPurchase:hover{
+  background: rgba(0, 119, 255, 0.7);
+
+}
+.titleBook{
+  text-wrap: balance;
+}
+.synopsisBook{
+  text-wrap: pretty;
+}
+img{
+  width: 300px; height: auto;
+}
+.linkBack{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  color: white;
+}
+.linkBack:hover{
+  opacity: .7;
+}
